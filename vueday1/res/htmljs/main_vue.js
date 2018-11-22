@@ -8,12 +8,12 @@ var demovue = function() {
 		dataurl: [{
 
 				tab_url: "index.html",
-				name: "里七首页",
+				name: "网站首页",
 				classtype:"active",
 			},
 			{
 				tab_url: "whisper.html",
-				name: "里七动态",
+				name: "网站动态",
 				classtype:"",
 			},
 
@@ -23,16 +23,11 @@ var demovue = function() {
 				name:"网站留言",
 				classtype:"",
 			},
+			
 			{
 
-				tab_url: "album.html",
-				name:"里七相册",
-				classtype:"",
-			},
-			{
-
-				tab_url: "about (2).html",
-				name:"关于里七",
+				tab_url: "about.html",
+				name:"关于网站",
 				classtype:"",
 			}
 		],
