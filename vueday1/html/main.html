@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../res/vue/jquery.min.js"></script>
+		<script type="text/javascript" src="../res/vue/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="../res/css/main.css">
+
+	</head>
+
+	<body>
+
+		<div class="header" id="blog_main_id">
+			<div class="menu-btn">
+				<div class="menu"></div>
+			</div>
+			<h1 class="logo">
+              <a href="index.html">
+              <span>LIQI</span>
+               <img src="../res/img/liqi.png" style="width: 53%;">
+               </a>
+            </h1>
+			<div class="nav">
+				<a @click="tabl_topclick($event,index)" style="cursor: pointer;" :class="item.classtype" v-for="(item,index) in dataurl">{{item.name}}</a>
+				
+			</div>
+			<ul class="layui-nav header-down-nav">
+				<li class="layui-nav-item">
+					<a href="index.html" class="active">文章</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="whisper.html">微语</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="leacots.html">留言</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="album.html">相册</a>
+				</li>
+				<li class="layui-nav-item">
+					<a href="about.html">关于</a>
+				</li>
+			</ul>
+			<p class="welcome-text">
+				欢迎来到<span class="name">里七</span>门户~
+			</p>
+		</div>
+		<iframe id="iframe_id" width="100%" height="500px" frameborder="no"></iframe>
+		<script src="../res/htmljs/main_vue.js"></script>
+	</body>
+
+</html>
